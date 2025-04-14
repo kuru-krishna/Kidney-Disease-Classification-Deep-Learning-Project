@@ -329,3 +329,152 @@ Traceback (most recent call last):
     return np.array(x)
            ^^^^^^^^^^^
 NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-04-10 08:49:35,555: INFO: main: *******************]
+[2025-04-10 08:49:35,555: INFO: main: >>>>>> stage Data Ingestion started <<<<<<]
+[2025-04-10 08:49:35,555: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-10 08:49:35,555: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-10 08:49:35,555: INFO: common: created directory at: artifacts]
+[2025-04-10 08:49:35,555: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-10 08:49:35,555: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1UHmcgFCaNvyCFs65-3scHFABfJ1r90FB/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-10 08:50:06,830: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1UHmcgFCaNvyCFs65-3scHFABfJ1r90FB/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-10 08:50:07,196: INFO: data_ingestion: Extracted zip file into: artifacts/data_ingestion/unzipped]
+[2025-04-10 08:50:07,196: INFO: main: >>>>>> stage Data Ingestion completed <<<<<<
+
+x==========x]
+[2025-04-10 08:50:07,196: INFO: main: *******************]
+[2025-04-10 08:50:07,196: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2025-04-10 08:50:07,211: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-10 08:50:07,211: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-10 08:50:07,211: INFO: common: created directory at: artifacts]
+[2025-04-10 08:50:07,211: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-10 08:50:07,436: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-10 08:50:07,532: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-10 08:50:07,604: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x==========x]
+[2025-04-10 08:50:07,604: INFO: main: *******************]
+[2025-04-10 08:50:07,604: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2025-04-10 08:50:07,604: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-10 08:50:07,604: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-10 08:50:07,604: INFO: common: created directory at: artifacts]
+[2025-04-10 08:50:07,604: INFO: common: created directory at: artifacts\training]
+[2025-04-10 08:50:07,721: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-10 08:50:08,530: ERROR: main: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "C:\PROJECT\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 15, in run_stage
+    pipeline.main()
+  File "c:\project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+    training.train()
+  File "c:\project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 76, in train
+    self.model.fit(
+  File "C:\Users\kurumeti\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\kurumeti\anaconda3\Lib\site-packages\keras\src\backend\tensorflow\core.py", line 155, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-04-10 09:33:12,578: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-10 09:33:12,579: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-10 09:33:12,580: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-10 09:33:12,581: INFO: common: created directory at: artifacts]
+[2025-04-10 09:33:12,581: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-10 09:33:12,582: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1UHmcgFCaNvyCFs65-3scHFABfJ1r90FB/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-10 09:33:21,455: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1UHmcgFCaNvyCFs65-3scHFABfJ1r90FB/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-10 09:33:21,853: INFO: data_ingestion: Extracted zip file into: artifacts/data_ingestion/unzipped]
+[2025-04-10 09:33:21,854: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-10 09:33:21,854: INFO: main: *******************]
+[2025-04-10 09:33:21,854: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-10 09:33:21,855: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-10 09:33:21,856: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-10 09:33:21,856: INFO: common: created directory at: artifacts]
+[2025-04-10 09:33:21,857: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-10 09:33:22,120: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-10 09:33:22,285: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-10 09:33:22,286: INFO: main: *******************]
+[2025-04-10 09:33:22,286: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-10 09:33:22,287: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-10 09:33:22,288: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-10 09:33:22,289: INFO: common: created directory at: artifacts]
+[2025-04-10 09:33:22,289: INFO: common: created directory at: artifacts\training]
+[2025-04-10 09:33:37,158: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-14 15:00:46,926: INFO: utils: Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2025-04-14 15:00:46,926: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-04-14 15:00:50,402: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-14 15:00:50,428: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 15:00:50,457: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 15:00:50,457: INFO: common: created directory at: artifacts]
+[2025-04-14 15:00:50,457: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-14 15:00:50,457: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1UHmcgFCaNvyCFs65-3scHFABfJ1r90FB/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-14 15:00:56,782: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1UHmcgFCaNvyCFs65-3scHFABfJ1r90FB/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-14 15:00:57,508: INFO: data_ingestion: Extracted zip file into: artifacts/data_ingestion/unzipped]
+[2025-04-14 15:00:57,508: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-14 15:00:57,508: INFO: main: *******************]
+[2025-04-14 15:00:57,508: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-14 15:00:57,508: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 15:00:57,508: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 15:00:57,508: INFO: common: created directory at: artifacts]
+[2025-04-14 15:00:57,524: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-14 15:00:57,993: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-14 15:00:58,159: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-14 15:00:58,304: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-14 15:00:58,304: INFO: main: *******************]
+[2025-04-14 15:00:58,304: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-14 15:00:58,304: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 15:00:58,319: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 15:00:58,319: INFO: common: created directory at: artifacts]
+[2025-04-14 15:00:58,321: INFO: common: created directory at: artifacts\training]
+[2025-04-14 15:00:58,511: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-14 15:01:00,329: ERROR: main: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "C:\PROJECT\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 42, in <module>
+    model_trainer.main()
+  File "c:\project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+    training.train()
+  File "c:\project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 76, in train
+    self.model.fit(
+  File "C:\Users\kurumeti\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\kurumeti\anaconda3\Lib\site-packages\keras\src\backend\tensorflow\core.py", line 155, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-04-14 15:01:52,828: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-14 15:01:52,832: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 15:01:52,834: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 15:01:52,834: INFO: common: created directory at: artifacts]
+[2025-04-14 15:01:52,834: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-14 15:01:52,838: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1UHmcgFCaNvyCFs65-3scHFABfJ1r90FB/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-14 15:01:58,455: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1UHmcgFCaNvyCFs65-3scHFABfJ1r90FB/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-14 15:01:59,136: INFO: data_ingestion: Extracted zip file into: artifacts/data_ingestion/unzipped]
+[2025-04-14 15:01:59,136: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-14 15:01:59,136: INFO: main: *******************]
+[2025-04-14 15:01:59,136: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-14 15:01:59,136: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 15:01:59,136: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 15:01:59,147: INFO: common: created directory at: artifacts]
+[2025-04-14 15:01:59,147: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-14 15:01:59,713: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-14 15:01:59,983: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-14 15:01:59,983: INFO: main: *******************]
+[2025-04-14 15:01:59,983: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-14 15:01:59,983: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 15:01:59,983: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 15:01:59,983: INFO: common: created directory at: artifacts]
+[2025-04-14 15:01:59,991: INFO: common: created directory at: artifacts\training]
+[2025-04-14 15:02:21,861: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
