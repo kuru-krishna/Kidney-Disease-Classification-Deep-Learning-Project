@@ -13,10 +13,7 @@ Update the dvc.yaml
 app.py
 How to run?
 STEPS:
-Clone the repository
 
-https://github.com/krishnaik06/Kidney-Disease-Classification-Deep-Learning-Project
-STEP 01- Create a conda environment after opening the repository
 conda create -n cnncls python=3.8 -y
 conda activate cnncls
 STEP 02- install the requirements
@@ -43,11 +40,12 @@ python script.py
 
 Run this to export as env variables:
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
+export MLFLOW_TRACKING_URI=https://dagshub.com/kuru-krishna/Kidney-Disease-Classification-Deep-Learning-Project.mlflow
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_USERNAME=kuru-krishna 
+
+export MLFLOW_TRACKING_PASSWORD=355a62c1c93126fb421ea798b58ca96a110908bf
 DVC cmd
 dvc init
 dvc repro
