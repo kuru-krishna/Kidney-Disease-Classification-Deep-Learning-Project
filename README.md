@@ -119,3 +119,14 @@ AWS_REGION = us-east-1
 AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
 ECR_REPOSITORY_NAME = simple-app
+
+
+
+
+
+
+
+
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/kuru-krishna/Kidney-Disease-Classification-Deep-Learning-Project.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="kuru-krishna"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="7f54609aa975993e4d51f473eccd8c598a6e2a5e"
